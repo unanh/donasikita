@@ -1,0 +1,31 @@
+.site{
+    display: flex;
+    min-height: 10vh;
+    flex-direction: column;
+  }
+  .site-content{
+    flex: 1;
+
+  }
+ /* .full{
+    height: 100%;
+  }*/
+/*  body{
+    height: 100%;
+    position: relative;
+  }*/
+  .coklat{
+    background-color: #D14D00;
+
+  }
+  .hijau{
+    color: green;
+  }
+
+body {
+  background-color: #ECF0F1;
+}
+
+.page-login {
+  margin-top: 25px;
+}
