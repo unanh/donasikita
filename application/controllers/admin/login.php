@@ -4,7 +4,7 @@ class Login extends CI_Controller{
  
 	function __construct(){
 		parent::__construct();		
-		$this->load->model('m_login');
+		$this->load->model('M_login');
  
 	}
  
@@ -19,17 +19,20 @@ class Login extends CI_Controller{
 			'username' => $username,
 			'password' => md5($password)
 			);
-		$cek = $this->m_login->cek_login("admin",$where)->num_rows();
+		$cek = $this->M_login->cek_login("admin",$where)->num_rows();
+		$data= $this->M_login->cek_login("admin",$where)->row();
 		if($cek > 0){
  
 			$data_session = array(
-				'nama' => $username,
+				'nama' => $data->nama,
+				'foto' => $data->foto,
+				'email' => $username,
 				'status' => "login"
 				);
  
 			$this->session->set_userdata($data_session);
  
-			redirect(base_url("admin"));
+			redirect(base_url("admin_home"));
  
 		}else{
 			echo "Username dan password salah !";
@@ -37,7 +40,7 @@ class Login extends CI_Controller{
 	}
  
 	function logout(){
-		$this->session->sess_destroy();
+		$this->session->session_destroy();
 		redirect(base_url('login'));
 	}
 }
