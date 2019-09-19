@@ -32,29 +32,7 @@
 		</h3>
 		<div >
 		</div>
-		<div class="ui grid">
-			<div class="ui primary row middle aligned">
-				<div class="ten right aligned column">
-					<div class="ui icon input">
-
-						<a href="indexdonat.php"><button class="ui teal button">Home</button></a>
-						<button class="ui teal button">
-            <div class="ui simple dropdown item ">Menu
-            <i class="dropdown icon"></i> 
-							<div class="menu">
-								<a href="...." class="item">Partisipasi saya</a>
-								<a class="item red">Proses donasi</a>
-								<a class="item">Siapa Donasi kita?</a>
-								<a class="item">Kontak</a></button>
-								<a href="index.html"><button class="ui teal button">Logout</button></a>
-								
-								<input type="text" color="orange" placeholder="Search...">
-								<i class="inverted circular search link teal icon"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-
+		
 
 				<div class="ui grid">
 					<div class="three wide column"></div>
