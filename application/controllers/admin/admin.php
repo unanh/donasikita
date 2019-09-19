@@ -1,6 +1,5 @@
 <?php
-define('BASEPATH') OR exit('NO direct script access allowed');
-
+//if(!defined('BASEPATH') OR exit('No direct script access allowed'));
 /**
 * 
 */
@@ -15,27 +14,27 @@ class Admin extends CI_Controller
 	}
 
 	public function index(){
-		$data["admin"] = $this->admin->getAll();
-		$this->load->view("admin/list", $data);
+		$data["admin"] = $this->M_admin->getAll();
+		$this->load->view("admin/kelola_admin/list", $data);
 	}
 
-	public function add(){
+	public function add(){ 
 		$admin = $this->M_admin;
 		$validation = $this->form_validation;
 		$validation->set_rules($admin->rules());
 
 		if ($validation->run()) {
-			$product->save();
+			$admin->save();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$this->load->view("admin/new_form");
+		$this->load->view("admin/kelola_admin/new_form");
 	}
 
 	public function edit($id=null)
 	{
-		if (!isset($id)) redirect('admin');
-		$product = $this->M_admin;
+		if (!isset($id)) redirect('admin_list');
+		$admin = $this->M_admin;
 		$validation = $this->form_validation;
 		$validation->set_rules($admin->rules());
 
@@ -44,10 +43,10 @@ class Admin extends CI_Controller
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$data["admin"] = $product->getById($id);
+		$data["admin"] = $admin->getById($id);
 		if (!$data["admin"]) show_404();
 
-		$this->load->view("admin/edit_form", $data);
+		$this->load->view("admin/kelola_admin/edit_form", $data);
 	}
 
 	public function delete($id=null)
@@ -55,7 +54,8 @@ class Admin extends CI_Controller
 		if (!isset($id)) show_404();
 		
 		if ($this->M_admin->delete($id)) {
-			redirect(site_url('admin'));
+			redirect(site_url('admin_list'));
 		}
 	}
 }
+?>
