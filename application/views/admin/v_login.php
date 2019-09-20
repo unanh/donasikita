@@ -31,16 +31,16 @@
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Login</div>
       <div class="card-body">
-        <form method="post" action="<?php echo base_url('index.php/admin_login/aksi_login') ?>">
+        <form method="post" action="<?php echo base_url('admin_login/aksi_login') ?>">
           <div class="form-group">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username" required="required" autofocus="autofocus">
               <label for="inputEmail">Email address</label>
             </div>
           </div>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required="required">
               <label for="inputPassword">Password</label>
             </div>
           </div>
