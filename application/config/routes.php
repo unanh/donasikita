@@ -58,8 +58,8 @@ $route['admin_login/aksi_login'] = 'admin/login/aksi_login';
 $route['admin_home'] = 'admin/Overview';
 $route['admin_list'] = 'admin/admin';
 $route['admin_add'] = 'admin/admin/add';
-$route['admin_edit'] = 'admin/admin/edit';
-$route['admin_hapus'] = 'admin/admin/delete';
+$route['admin_edit/(:any)'] = 'admin/admin/edit/$1';
+$route['admin_delete/(:any)'] = 'admin/admin/delete/$1';
 $route['admin_logout'] = 'admin/login/logout';
 
 
