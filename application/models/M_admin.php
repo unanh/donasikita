@@ -71,7 +71,8 @@ class M_admin extends CI_Model
 		$this->alamat = $post["alamat"];
 		$this->bio = $post["bio"];
 		$this->username = $post["username"];
-		$this->password = $post["password"];
+		$this->password = md5($post["password"]);
+		$this->level = $post["level"];
 		$this->db->update($this->_table, $this, array('id' => $post['id']));
 	}
 
