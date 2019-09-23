@@ -72,9 +72,9 @@
 		</div>
 		<div class="form-group">
 			<label for="alamat">Level</label>
-			<input class="form-control <?php echo form_error('alamat') ? 'is_invalid':''?>" type="text" name="alamat" placeholder="" value="<?php echo $admin->level ?>">
+			<input class="form-control <?php echo form_error('level') ? 'is_invalid':''?>" type="text" name="level" placeholder="" value="<?php echo $admin->level ?>">
 			<div class="invalid-feedback">
-				<?php echo form_error('alamat') ?>
+				<?php echo form_error('level') ?>
 			</div>
 		</div>	
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
