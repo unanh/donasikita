@@ -53,6 +53,14 @@ $route['default_controller'] = 'User';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['admin_login'] = 'login';
-$route['admin_login/aksi_login'] = 'login/aksi_login';
-$route['admin_dashboard'] = 'Overview';
+$route['admin_login'] = 'admin/login';
+$route['admin_login/aksi_login'] = 'admin/login/aksi_login';
+$route['admin_home'] = 'admin/Overview';
+$route['admin_list'] = 'admin/admin';
+$route['admin_add'] = 'admin/admin/add';
+$route['admin_edit/(:any)'] = 'admin/admin/edit/$1';
+$route['admin_delete/(:any)'] = 'admin/admin/delete/$1';
+$route['admin_logout'] = 'admin/login/logout';
+
+
+

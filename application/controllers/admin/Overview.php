@@ -13,7 +13,7 @@ class Overview extends CI_Controller{
 
 	function index(){
 		if($this->session->userdata('status') != "login"){
-			redirect(base_url("login"));
+			redirect(base_url("admin/login"));
 		}else{
 		$this->load->view('admin/overview');
 		}
