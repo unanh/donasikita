@@ -84,7 +84,7 @@ class M_admin extends CI_Model
 
 	public function _uploadImage()
 	{
-		$config['upload_path'] = 'assets/img/';
+		$config['upload_path'] = './assets/img/';
 		$config['allowed_types'] = 'jpg|png';
 		$config['file_name'] = $this->id;
 		$config['overwrite'] = true;
