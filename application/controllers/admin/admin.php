@@ -33,7 +33,7 @@ class Admin extends CI_Controller
 
 	public function edit($id=null)
 	{
-		if (!isset($id)) redirect('admin/admin');
+		if (!isset($id)) redirect('admin_list');
 		$admin = $this->M_admin;
 		$validation = $this->form_validation;
 		$validation->set_rules($admin->rules());
@@ -54,7 +54,7 @@ class Admin extends CI_Controller
 		if (!isset($id)) show_404();
 		
 		if ($this->M_admin->delete($id)) {
-			redirect(site_url('admin/admin'));
+			redirect(site_url('admin_list'));
 		}
 	}
 }

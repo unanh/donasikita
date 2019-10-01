@@ -20,7 +20,7 @@
 
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin/admin') ?>"><i class="fas fa-arrow-left"></i>Back</a>
+		<a href="<?php echo site_url('admin_list') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
 		<form action="<?php base_url('admin/admin/add') ?>" method="post" enctype="multipart/form-data">

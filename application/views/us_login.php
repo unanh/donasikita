@@ -31,7 +31,7 @@
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Login</div>
       <div class="card-body">
-        <form method="post" action="<?php echo base_url('admin/login/aksi_login') ?>">
+        <form method="post" action="<?php echo base_url('admin_login/aksi_login') ?>">
           <div class="form-group">
             <div class="form-label-group">
               <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username" required="required" autofocus="autofocus">
