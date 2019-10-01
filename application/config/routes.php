@@ -53,14 +53,36 @@ $route['default_controller'] = 'User';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['admin_login'] = 'admin/login';
-$route['admin_login/aksi_login'] = 'admin/login/aksi_login';
-$route['admin_home'] = 'admin/Overview';
-$route['admin_list'] = 'admin/admin';
-$route['admin_add'] = 'admin/admin/add';
-$route['admin_edit/(:any)'] = 'admin/admin/edit/$1';
-$route['admin_delete/(:any)'] = 'admin/admin/delete/$1';
-$route['admin_logout'] = 'admin/login/logout';
+$route['admin'] = 'admin/Overview';
+$route['admin/login'] = 'admin/login';
+$route['admin/login/aksi_login'] = 'admin/login/aksi_login';
+$route['admin/logout'] = 'admin/login/logout';
+
+$route['admin/admin'] = 'admin/admin';
+$route['admin/admin/add'] = 'admin/admin/add';
+$route['admin/admin/edit/(:any)'] = 'admin/admin/edit/$1';
+$route['admin/admin/delete/(:any)'] = 'admin/admin/delete/$1';
+
+$route['admin/post'] = 'admin/info';
+$route['admin/post/add'] = 'admin/info/add';
+$route['admin/post/edit/(:any)'] = 'admin/info/edit/$1';
+$route['admin/post/delete()/(:any)'] = 'admin/info/delete/$1';
+
+$route['admin/member'] = 'admin/member';
+$route['admin/member/add'] = 'admin/member/add';
+$route['admin/member/edit/(:any)'] = 'admin/member/edit/$1';
+$route['admin/member/delete()/(:any)'] = 'admin/member/delete/$1';
+
+$route['admin/donasi'] = 'admin/donasi';
+$route['admin/donasi/add'] = 'admin/donasi/add';
+$route['admin/donasi/edit/(:any)'] = 'admin/donasi/edit/$1';
+$route['admin/donasi/delete()/(:any)'] = 'admin/donasi/delete/$1';
+
+$route['admin/kampanye'] = 'admin/kampanye';
+$route['admin/kampanye/add'] = 'admin/kampanye/add';
+$route['admin/kampanye/edit/(:any)'] = 'admin/kampanye/edit/$1';
+$route['admin/kampanye/delete()/(:any)'] = 'admin/kampanye/delete/$1';
+
 $route['kirimdl'] = 'User/kirimdl/';
 $route['kirimdl2'] = 'User/kirimdl2/';
 $route['kirimdl3'] = 'User/kirimdl3/';
