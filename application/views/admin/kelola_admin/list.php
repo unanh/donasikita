@@ -15,7 +15,7 @@
 <!-- datatables -->
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin_add') ?>"><i class="fas fa-plus"></i>Tambah</a>
+		<a href="<?php echo site_url('admin/admin/add') ?>"><i class="fas fa-plus"></i>Tambah</a>
 	</div>
 	<div class="card-body">
 
@@ -54,8 +54,8 @@
 						<?php echo $admin->level ?>
 					</td>
 					<td width="250">
-						<a href="<?php echo site_url('admin_edit/'.$admin->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
-						<a onclick="deleteConfirm('<?php echo site_url('admin_delete/'.$admin->id) ?>')" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
+						<a href="<?php echo site_url('admin/admin/edit/'.$admin->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
+						<a onclick="deleteConfirm('<?php echo site_url('admin/admin/delete/'.$admin->id) ?>')" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
 					</td>
 				</tr>
 			<?php endforeach; ?>
