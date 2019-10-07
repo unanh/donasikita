@@ -25,7 +25,10 @@ class M_member extends CI_Model
 
 	public function getAll()
 	{
-		return $this->db->get($this->_table)->result();
+		$this->db->select('*');
+		$this->db->from('member');
+		$this->db->join('user', 'user.id_user = member.id_user');
+		return $this->db->get()->result();
 	}
 
 	public function getById($id_member)
