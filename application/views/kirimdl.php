@@ -41,16 +41,12 @@
 							<td>:</td>
 							<td><input type="text" placeholder="isi dengan nama"></td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td>Nominal</td>
 							<td>:</td>
 							<td><input type="number" name="" placeholder="Jumlah bantuan"></td>
-						</tr>
-						<tr>
-							<td>Rek. Tujuan</td>
-							<td>:</td>
-							<td><input type="text" name="" placeholder="data tampil pilhan DB bri/bni/bca"></td>
-						</tr>
+						</tr> -->
+					
 						<tr>
 							<td>Donatur</td>
 							<td>:</td>

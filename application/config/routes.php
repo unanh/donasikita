@@ -73,11 +73,17 @@ $route['admin/member/add'] = 'admin/member/add';
 $route['admin/member/edit/(:any)'] = 'admin/member/edit/$1';
 $route['admin/member/delete()/(:any)'] = 'admin/member/delete/$1';
 
+$route['admin/donatur/add'] = 'admin/donatur/add';
+$route['admin/donatur/edit/(:any)'] = 'admin/donatur/edit/$1';
+$route['admin/donatur/delete()/(:any)'] = 'admin/donatur/delete/$1';
 $route['admin/donasi'] = 'admin/donasi';
 $route['admin/donasi/add'] = 'admin/donasi/add';
 $route['admin/donasi/edit/(:any)'] = 'admin/donasi/edit/$1';
 $route['admin/donasi/delete()/(:any)'] = 'admin/donasi/delete/$1';
 
+$route['admin/penggalang/add'] = 'admin/penggalang/add';
+$route['admin/penggalang/edit/(:any)'] = 'admin/penggalang/edit/$1';
+$route['admin/penggalang/delete()/(:any)'] = 'admin/penggalang/delete/$1';
 $route['admin/kampanye'] = 'admin/kampanye';
 $route['admin/kampanye/add'] = 'admin/kampanye/add';
 $route['admin/kampanye/edit/(:any)'] = 'admin/kampanye/edit/$1';
