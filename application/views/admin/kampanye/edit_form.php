@@ -23,60 +23,53 @@
 		<a href="<?php echo site_url('admin_list') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
-		<form action="<?php base_url('admin/admin/edit') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php base_url('admin/penggalang/edit') ?>" method="post" enctype="multipart/form-data">
 
-		<input type="hidden" name="id" value="<?php echo $admin->id ?>">
+		<input type="hidden" name="id_penggalang" value="<?php echo $penggalang->id_penggalang ?>">
 
 		<div class="form-group">
+			<label for="id_member">ID Member</label>
+			<input class="form-control <?php echo form_error('id_member') ? 'is_invalid':''?>" type="text" name="id_member" placeholder="" value="<?php echo $penggalang->id_member ?>">
+			<div class="invalid-feedback">
+				<?php echo form_error('id_member') ?>
+			</div>
+		</div>
+		<div class="form-group">
 			<label for="nama">Nama</label>
-			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="Nama lengkap" value="<?php echo $admin->nama ?>">
+			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="Nama lengkap" value="<?php echo $penggalang->nama ?>">
 			<div class="invalid-feedback">
 				<?php echo form_error('nama') ?>
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="username">Username</label>
-			<input class="form-control <?php echo form_error('username') ? 'is_invalid':''?>" type="text" name="username" placeholder="" value="<?php echo $admin->username ?>">
+			<input class="form-control <?php echo form_error('username') ? 'is_invalid':''?>" type="text" name="username" placeholder="" value="<?php echo $penggalang->username ?>">
 			<div class="invalid-feedback">
 				<?php echo form_error('username') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="password">Password</label>
-			<input class="form-control <?php echo form_error('password') ? 'is_invalid':''?>" type="text" name="password" placeholder="" value="<?php echo $admin->password ?>">
+			<label for="nik">NIK</label>
+			<input class="form-control <?php echo form_error('nik') ? 'is_invalid':''?>" type="text" name="nik" placeholder="" value="<?php echo $penggalang->nik ?>">
 			<div class="invalid-feedback">
-				<?php echo form_error('password') ?>
+				<?php echo form_error('nik') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="foto">Foto</label>
-			<input class="form-control-file <?php echo form_error('foto') ? 'is-invalid':'' ?>" type="file" name="foto" value="<?php echo $admin->foto ?>">
-			<input type="hidden" name="old_image" value="<?php echo $admin->foto ?>">
+			<label for="no_kk">No. KK</label>
+			<input class="form-control <?php echo form_error('no_kk') ? 'is_invalid':''?>" type="text" name="no_kk" placeholder="" value="<?php echo $penggalang->no_kk ?>">
 			<div class="invalid-feedback">
-				<?php echo form_error('foto') ?>
+				<?php echo form_error('no_kk') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="alamat">Alamat</label>
-			<input class="form-control <?php echo form_error('alamat') ? 'is_invalid':''?>" type="text" name="alamat" placeholder="" value="<?php echo $admin->alamat ?>">
+			<label for="no_rek">No. Rek</label>
+			<input class="form-control <?php echo form_error('no_rek') ? 'is_invalid':''?>" type="text" name="no_rek" placeholder="" value="<?php echo $penggalang->no_rek ?>">
 			<div class="invalid-feedback">
-				<?php echo form_error('alamat') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="bio">Bio</label>
-			<textarea class="form-control <?php echo form_error('bio') ? 'is_invalid':''?>" name="bio" placeholder=""><?php echo $admin->bio ?></textarea>
-			<div class="invalid-feedback">
-				<?php echo form_error('bio') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="alamat">Level</label>
-			<input class="form-control <?php echo form_error('level') ? 'is_invalid':''?>" type="text" name="level" placeholder="" value="<?php echo $admin->level ?>">
-			<div class="invalid-feedback">
-				<?php echo form_error('level') ?>
+				<?php echo form_error('no_rek') ?>
 			</div>
 		</div>	
+
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
 		</form>
 	</div>
