@@ -23,7 +23,7 @@
 		<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
 			<thead>
 				<tr>
-					<th>Nama</th>
+					<th>Username</th>
 					<th>Kampanye</th>
 					<th>Tanggal</th>
 					<th>Jumlah Donasi</th>
@@ -34,7 +34,7 @@
 				<?php foreach ($donasi as $donasi): ?>
 				<tr>
 					<td>
-						<?php echo $donasi->nama ?>
+						<?php echo $donasi->username ?>
 					</td>
 					<td>
 						<?php echo $donasi->judul ?>
