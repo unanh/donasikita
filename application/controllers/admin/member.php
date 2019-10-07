@@ -9,12 +9,12 @@ class Member extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("M_admin");
+		$this->load->model("M_member");
 		$this->load->library('form_validation');
 	}
 
 	public function index(){
-		$data["member"] = $this->M_admin->getAll();
+		$data["member"] = $this->M_member->getAll();
 		$this->load->view("admin/member/list", $data);
 	}
 
