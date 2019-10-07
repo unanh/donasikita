@@ -25,7 +25,7 @@
 	<div class="card-body">
 		<form action="<?php base_url('admin/donasi/add') ?>" method="post" enctype="multipart/form-data">
 		
-		<label>Data Diri</label>
+		<label>Data Diri Donatur</label>
 		<hr>
 
 		<div class="form-group">
@@ -51,41 +51,8 @@
 				<?php echo form_error('username') ?>
 			</div>
 		</div>
-
-
-		<label></label>
-		<hr>
-
-		<div class="form-group">
-			<label for="id_kampanye">ID Kampanye</label>
-			<input class="form-control <?php echo form_error('id_kampanye') ? 'is_invalid':''?>" type="text" name="id_kampanye" placeholder="">
-			<div class="invalid-feedback">
-				<?php echo form_error('password') ?>
-			</div>
-		</div>
-		<label><?php  ?></label>
-		<div class="form-group">
-			<label for="tgl">Tanggal</label>
-			<input class="form-control <?php echo form_error('foto') ? 'is-invalid':'' ?>" type="date" name="tgl">
-			<div class="invalid-feedback">
-				<?php echo form_error('tgl') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="jml_donasi">Jumlah Donasi</label>
-			<input class="form-control <?php echo form_error('jml_donasi') ? 'is_invalid':''?>" type="text" name="jml_donasi" placeholder="">
-			<div class="invalid-feedback">
-				<?php echo form_error('jml_donasi') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="pembayaran">Opsi Pembayaran</label>
-			<input class="form-control <?php echo form_error('pembayaran') ? 'is_invalid':''?>" type="text" name="pembayaran" placeholder="">
-			<div class="invalid-feedback">
-				<?php echo form_error('pembayaran') ?>
-			</div>
-		</div>	
-		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
+		<button type="submit" class="btn btn-primary"><a href="<?php echo site_url('admin/donasi/add/') ?>" style="text-decoration: none; color: white;">Next<i class='fas fa-arrow-right'></i></a></button>
+		<!-- <input class="btn btn-success" type="submit" name="simpan" value="Next"> -->
 		</form>
 	</div>
 	<div class="card-footer small text-muted">
