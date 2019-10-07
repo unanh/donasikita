@@ -25,6 +25,13 @@
 	<div class="card-body">
 		<form action="<?php base_url('admin/admin/add') ?>" method="post" enctype="multipart/form-data">
 		<div class="form-group">
+			<label for="id_member">ID Member</label>
+			<input class="form-control <?php echo form_error('id_member') ? 'is_invalid':''?>" type="text" name="id_member" placeholder="">
+			<div class="invalid-feedback">
+				<?php echo form_error('id_member') ?>
+			</div>
+		</div>
+		<div class="form-group">
 			<label for="nama">Nama</label>
 			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="Nama lengkap">
 			<div class="invalid-feedback">
@@ -39,31 +46,24 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="password">Password</label>
-			<input class="form-control <?php echo form_error('password') ? 'is_invalid':''?>" type="text" name="password" placeholder="">
+			<label for="nik">NIK</label>
+			<input class="form-control <?php echo form_error('nik') ? 'is_invalid':''?>" type="text" name="nik" placeholder="">
 			<div class="invalid-feedback">
-				<?php echo form_error('password') ?>
+				<?php echo form_error('nik') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="foto">Foto</label>
-			<input class="form-control-file <?php echo form_error('foto') ? 'is-invalid':'' ?>" type="file" name="foto">
+			<label for="no_kk">No. KK</label>
+			<input class="form-control <?php echo form_error('no_kk') ? 'is_invalid':''?>" type="text" name="no_kk" placeholder="">
 			<div class="invalid-feedback">
-				<?php echo form_error('foto') ?>
+				<?php echo form_error('no_kk') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="alamat">Alamat</label>
-			<input class="form-control <?php echo form_error('alamat') ? 'is_invalid':''?>" type="text" name="alamat" placeholder="">
+			<label for="no_rek">No. Rek</label>
+			<input class="form-control <?php echo form_error('no_rek') ? 'is_invalid':''?>" type="text" name="no_rek" placeholder="">
 			<div class="invalid-feedback">
-				<?php echo form_error('alamat') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="bio">Bio</label>
-			<textarea class="form-control <?php echo form_error('bio') ? 'is_invalid':''?>" name="bio" placeholder=""></textarea>
-			<div class="invalid-feedback">
-				<?php echo form_error('bio') ?>
+				<?php echo form_error('no_rek') ?>
 			</div>
 		</div>	
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
