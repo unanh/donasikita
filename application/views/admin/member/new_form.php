@@ -23,10 +23,10 @@
 		<a href="<?php echo site_url('admin/member') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
-		<form action="<?php base_url('admin/member/add') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php //base_url('admin/user/add') ?>" method="post" enctype="multipart/form-data">
 		<div class="form-group">
 			<label for="nama">Nama</label>
-			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="Nama lengkap">
+			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="">
 			<div class="invalid-feedback">
 				<?php echo form_error('nama') ?>
 			</div>
@@ -67,7 +67,7 @@
 			</div>
 		</div>	
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
-		</form>
+	</form>
 	</div>
 	<div class="card-footer small text-muted">
 		*required fields
