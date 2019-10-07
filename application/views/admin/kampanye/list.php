@@ -15,7 +15,7 @@
 <!-- datatables -->
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin_add') ?>"><i class="fas fa-plus"></i>Tambah</a>
+		<a href="<?php echo site_url('admin/kampanye/add') ?>"><i class="fas fa-plus"></i>Tambah</a>
 	</div>
 	<div class="card-body">
 
@@ -23,39 +23,46 @@
 		<table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
 			<thead>
 				<tr>
-					<th>Nama</th>
 					<th>Username</th>
-					<th>Foto</th>
-					<th>Alamat</th>
-					<th>Bio</th>
-					<th>Level</th>
-					<th>Action</th>
+					<th>Kategori</th>
+					<th>Kampanye</th>
+					<th>Deskripsi</th>
+					<th>File</th>
+					<th>Target</th>
+					<th>Tgl Pencairan</th>
+					<th>Status</th>
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach ($admin as $admin): ?>
+				<?php foreach ($kampanye as $kampanye): ?>
 				<tr>
 					<td>
-						<?php echo $admin->nama ?>
+						<?php echo $kampanye->username ?>
 					</td>
 					<td>
-						<?php echo $admin->username ?>
+						<?php echo $kampanye->kategori ?>
 					</td>
 					<td>
-						<img src="<?php echo base_url('assets/img/'.$admin->foto) ?>" width="64">
-					</td>
-					<td>
-						<?php echo $admin->alamat ?>
+						<?php echo $kampanye->judul ?>
 					</td>
 					<td class="small">
-						<?php echo substr($admin->bio, 0, 120) ?>...
+						<?php echo substr($kampanye->deskripsi, 0, 120) ?>...
 					</td>
 					<td>
-						<?php echo $admin->level ?>
+						<img src="<?php echo base_url('assets/img/'.$kampanye->file) ?>" width="64">
+					</td>
+					<td>
+						<?php echo $kampanye->target_nominal ?>
+					</td>
+					<td>
+						<?php echo $kampanye->tgl_pencairan ?>
+					</td>
+					<td>
+						<?php echo $kampanye->status ?>
 					</td>
 					<td width="250">
-						<a href="<?php echo site_url('admin_edit/'.$admin->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
-						<a onclick="deleteConfirm('<?php echo site_url('admin_delete/'.$admin->id) ?>')" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
+						<a href="<?php echo site_url('admin/kampanye/edit/'.$kampanye->id_kampanye) ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
+						<a onclick="deleteConfirm('<?php echo site_url('admin/kampanye/delete/'.$kampanye->id_kampanye) ?>')" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
 					</td>
 				</tr>
 			<?php endforeach; ?>
