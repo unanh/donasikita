@@ -9,51 +9,46 @@ class Donatur extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("M_donasi");
+		$this->load->model("M_donatur");
 		$this->load->library('form_validation');
 	}
 
-	public function index(){
-		$data["donasi"] = $this->M_donasi->getAll();
-		$this->load->view("admin/donasi/list", $data);
-	}
-
 	public function add(){ 
-		$donasi = $this->M_donasi;
+		$donatur = $this->M_donatur;
 		$validation = $this->form_validation;
-		$validation->set_rules($donasi->rules());
+		$validation->set_rules($donatur->rules());
 
 		if ($validation->run()) {
-			$donasi->save();
+			$donatur->save();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
 		$this->load->view("admin/donasi/new_form");
 	}
 
-	public function edit($id_donasi=null)
+	public function edit($id_donatur=null)
 	{
-		if (!isset($id_donasi)) redirect('admin/donasi');
-		$donasi = $this->M_donasi;
+		if (!isset($id_donatur)) redirect('admin/donasi');
+		$donatur = $this->M_donatur;
 		$validation = $this->form_validation;
-		$validation->set_rules($donasi->rules());
+		$validation->set_rules($donatur->rules());
 
 		if($validation->run()) {
-			$donasi->update();
+			$donatur->update();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$data["donasi"] = $donasi->getById($id_donasi);
-		if (!$data["donasi"]) show_404();
+		$data["donatur"] = $donatur->getById($id_donatur);
+		if (!$data["donatur"]) show_404();
 
 		$this->load->view("admin/donasi/edit_form", $data);
 	}
 
-	public function delete($id_donasi=null)
+	public function delete($id_donatur=null)
 	{
-		if (!isset($id_donasi)) show_404();
+		if (!isset($id_donatur)) show_404();
 		
-		if ($this->M_donasi->delete($id_donasi)) {
+		if ($this->M_donatur->delete($id_donatur)) {
 			redirect(site_url('admin/donasi'));
 		}
 	}
