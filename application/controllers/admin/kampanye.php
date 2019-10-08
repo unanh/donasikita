@@ -28,7 +28,7 @@ class Kampanye extends CI_Controller
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$this->load->view("admin/kampanye/new_form");
+		$this->load->view("admin/kampanye/new_form2");
 	}
 
 	public function edit($id_kampanye=null)
