@@ -56,7 +56,8 @@
 			<div class="invalid-feedback">
 				<?php echo form_error('pembayaran') ?>
 			</div>
-		</div>	
+		</div>
+		<button type="submit" class="btn btn-primary" style="margin-right: 866px;"><a href="<?php echo site_url('admin/donatur/add/') ?>" style="text-decoration: none; color: white; margin-right: auto;"><i class='fas fa-arrow-left'></i>Previous</a></button>	
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
 		</form>
 	</div>
