@@ -16,7 +16,7 @@
           <img src="<?php echo base_url('assets/img/'.$this->session->foto) ?>" class="rounded-circle" alt="Admin" width="50" height="30"> <?php echo  $this->session->nama; ?> <i class='fas fa-angle-down' style="margin-right: 10px; margin-left: 10px;"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">Account Setting</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/accountsetting') ?>">Account Setting</a>
           <a class="dropdown-item" href="<?php echo base_url('admin/logout') ?>" data-toggle="modal" data-target="#logoutModal">Logout</a>
         </div>
       </li>
