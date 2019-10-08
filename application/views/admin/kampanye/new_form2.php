@@ -20,10 +20,10 @@
 
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin_list') ?>"><i class="fas fa-arrow-left"></i>Back</a>
+		<a href="<?php echo site_url('admin/kampanye') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
-		<form action="<?php base_url('admin/admin/add') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php //base_url('admin/admin/add') ?>" method="post" enctype="multipart/form-data">
 		<div class="form-group">
 			<label for="id_penggalang">ID Penggalang</label>
 			<input class="form-control <?php echo form_error('id_penggalang') ? 'is_invalid':''?>" type="text" name="id_penggalang" placeholder="">
@@ -80,6 +80,7 @@
 				<?php echo form_error('status') ?>
 			</div>
 		</div>	
+		<button type="submit" class="btn btn-primary" style="margin-right: 866px;"><a href="<?php echo site_url('admin/penggalang/add/') ?>" style="text-decoration: none; color: white; margin-right: auto;"><i class='fas fa-arrow-left'></i>Previous</a></button>
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
 		</form>
 	</div>
