@@ -28,9 +28,18 @@
 <body id="body-login">
 
   <div class="container">
+
+
     <div class="card card-login mx-auto mt-5">
       <div class="card-header">Login</div>
       <div class="card-body">
+
+    <?php if ($this->session->flashdata('danger')): ?>
+    <div class="alert alert-danger" role="alert">
+    <?php echo $this->session->flashdata('danger'); ?>
+    </div>
+    <?php endif; ?>
+
         <form method="post" action="<?php echo base_url('admin/login/aksi_login') ?>">
           <div class="form-group">
             <div class="form-label-group">
@@ -55,7 +64,7 @@
           <button class="btn btn-primary btn-block">Login</button>
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="forgot-password.html">Forgot Password?</a>
+          <a class="d-block small mt-3" href="<?php echo base_url('admin/forgot-password') ?>">Forgot Password?</a>
         </div>
       </div>
     </div>
