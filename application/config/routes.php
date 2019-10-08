@@ -58,6 +58,11 @@ $route['admin/login'] = 'admin/login';
 $route['admin/login/aksi_login'] = 'admin/login/aksi_login';
 $route['admin/logout'] = 'admin/login/logout';
 
+$route['admin/forgot-password'] = 'admin/login/forgotpassword';
+
+$route['admin/accountsetting'] = 'admin/myprofile';
+$route['admin/accountsetting/edit/(:any)'] = 'admin/myprofile/edit/$1';
+
 $route['admin/admin'] = 'admin/admin';
 $route['admin/admin/add'] = 'admin/admin/add';
 $route['admin/admin/edit/(:any)'] = 'admin/admin/edit/$1';
