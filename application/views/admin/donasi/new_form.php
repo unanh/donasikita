@@ -23,7 +23,7 @@
 		<a href="<?php echo site_url('admin/donasi/list') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
-		<form action="<?php base_url('admin/donasi/add') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php //base_url('admin/donasi/add') ?>" method="post" enctype="multipart/form-data">
 		
 		<label>Data Diri Donatur</label>
 		<hr>
