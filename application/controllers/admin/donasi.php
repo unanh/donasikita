@@ -28,7 +28,7 @@ class Donasi extends CI_Controller
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$this->load->view("admin/donasi/new_form");
+		$this->load->view("admin/donasi/new_form2");
 	}
 
 	public function edit($id_donasi=null)
