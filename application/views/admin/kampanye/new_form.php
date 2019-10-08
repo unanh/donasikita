@@ -20,10 +20,10 @@
 
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin_list') ?>"><i class="fas fa-arrow-left"></i>Back</a>
+		<a href="<?php echo site_url('admin/kampanye') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
-		<form action="<?php base_url('admin/admin/add') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php //base_url('admin/admin/add') ?>" method="post" enctype="multipart/form-data">
 		<div class="form-group">
 			<label for="id_member">ID Member</label>
 			<input class="form-control <?php echo form_error('id_member') ? 'is_invalid':''?>" type="text" name="id_member" placeholder="">
@@ -33,7 +33,7 @@
 		</div>
 		<div class="form-group">
 			<label for="nama">Nama</label>
-			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="Nama lengkap">
+			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="">
 			<div class="invalid-feedback">
 				<?php echo form_error('nama') ?>
 			</div>
@@ -66,7 +66,8 @@
 				<?php echo form_error('no_rek') ?>
 			</div>
 		</div>	
-		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
+		<button type="submit" class="btn btn-primary"><a href="<?php echo site_url('admin/kampanye/add/') ?>" style="text-decoration: none; color: white;">Next<i class='fas fa-arrow-right'></i></a></button>
+		<!-- <input class="btn btn-success" type="submit" name="simpan" value="Simpan">	-->
 		</form>
 	</div>
 	<div class="card-footer small text-muted">
