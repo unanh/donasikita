@@ -4,7 +4,7 @@
 /**
 * 
 */
-class M_penggalan_dana extends CI_Model
+class M_penggalang extends CI_Model
 {
 	private $_table = "penggalang_dana";
 
