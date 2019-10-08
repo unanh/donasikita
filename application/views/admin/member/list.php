@@ -15,7 +15,7 @@
 <!-- datatables -->
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin/user/add') ?>"><i class="fas fa-plus"></i>Tambah</a>
+		<a href="<?php echo site_url('admin/member/add') ?>"><i class="fas fa-plus"></i>Tambah</a>
 	</div>
 	<div class="card-body">
 
