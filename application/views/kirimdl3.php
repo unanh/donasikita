@@ -37,16 +37,27 @@
 				<div class="ui form">
 
 					<table class="ui column">
+						
+						<tr>
+							<td>Upload bukti transfer</td>
+							<td>:</td>
+							<td><button class="fluid ui toggle button">pilih bukti tranfer</button>
+							<button class="fluid ui yellow button">Upload</button></td>
+						</tr>
+
 						<tr>
 
 							Terimakasih data anda sudah masuk daftar donatur semoga kebaikan anda di balas berlipat
 							ganda oleh Tuhan amin
 						</tr>
-						<tr>
+
+						
+						
+						<!-- <tr>
 							<td> </td>
 							<td></td>
 							<td><a href="<?php echo base_url()?>">Terimakasih</a></td>
-						</tr>
+						</tr> -->
 				</div>
 				</table>
 

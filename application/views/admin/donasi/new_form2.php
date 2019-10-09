@@ -20,54 +20,46 @@
 
 <div class="card mb-3">
 	<div class="card-header">
-		<a href="<?php echo site_url('admin/member') ?>"><i class="fas fa-arrow-left"></i>Back</a>
+		<a href="<?php echo site_url('admin/donasi/list') ?>"><i class="fas fa-arrow-left"></i>Back</a>
 	</div>
 	<div class="card-body">
-		<form action="<?php //base_url('admin/user/add') ?>" method="post" enctype="multipart/form-data">
+		<form action="<?php base_url('admin/donasi/add') ?>" method="post" enctype="multipart/form-data">
+		
+		<label>Donasi</label>
+		<hr>
+
 		<div class="form-group">
-			<label for="nama">Nama</label>
-			<input class="form-control <?php echo form_error('nama') ? 'is_invalid':''?>" type="text" name="nama" placeholder="">
-			<div class="invalid-feedback">
-				<?php echo form_error('nama') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="username">Username</label>
-			<input class="form-control <?php echo form_error('username') ? 'is_invalid':''?>" type="text" name="username" placeholder="">
-			<div class="invalid-feedback">
-				<?php echo form_error('username') ?>
-			</div>
-		</div>
-		<div class="form-group">
-			<label for="password">Password</label>
-			<input class="form-control <?php echo form_error('password') ? 'is_invalid':''?>" type="text" name="password" placeholder="">
+			<label for="id_kampanye">ID Kampanye</label>
+			<input class="form-control <?php echo form_error('id_kampanye') ? 'is_invalid':''?>" type="text" name="id_kampanye" placeholder="">
 			<div class="invalid-feedback">
 				<?php echo form_error('password') ?>
 			</div>
 		</div>
+		<label><?php  ?></label>
 		<div class="form-group">
-			<label for="foto">Foto</label>
-			<input class="form-control-file <?php echo form_error('foto') ? 'is-invalid':'' ?>" type="file" name="foto">
+			<label for="tgl">Tanggal</label>
+			<input class="form-control <?php echo form_error('foto') ? 'is-invalid':'' ?>" type="date" name="tgl">
 			<div class="invalid-feedback">
-				<?php echo form_error('foto') ?>
+				<?php echo form_error('tgl') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="alamat">Alamat</label>
-			<input class="form-control <?php echo form_error('alamat') ? 'is_invalid':''?>" type="text" name="alamat" placeholder="">
+			<label for="jml_donasi">Jumlah Donasi</label>
+			<input class="form-control <?php echo form_error('jml_donasi') ? 'is_invalid':''?>" type="text" name="jml_donasi" placeholder="">
 			<div class="invalid-feedback">
-				<?php echo form_error('alamat') ?>
+				<?php echo form_error('jml_donasi') ?>
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="bio">Bio</label>
-			<textarea class="form-control <?php echo form_error('bio') ? 'is_invalid':''?>" name="bio" placeholder=""></textarea>
+			<label for="pembayaran">Opsi Pembayaran</label>
+			<input class="form-control <?php echo form_error('pembayaran') ? 'is_invalid':''?>" type="text" name="pembayaran" placeholder="">
 			<div class="invalid-feedback">
-				<?php echo form_error('bio') ?>
+				<?php echo form_error('pembayaran') ?>
 			</div>
-		</div>	
+		</div>
+		<button type="submit" class="btn btn-primary" style="margin-right: 866px;"><a href="<?php echo site_url('admin/donatur/add/') ?>" style="text-decoration: none; color: white; margin-right: auto;"><i class='fas fa-arrow-left'></i>Previous</a></button>	
 		<input class="btn btn-success" type="submit" name="simpan" value="Simpan">	
-	</form>
+		</form>
 	</div>
 	<div class="card-footer small text-muted">
 		*required fields

@@ -9,17 +9,17 @@ class Member extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("M_admin");
+		$this->load->model("M_member");
 		$this->load->library('form_validation');
 	}
 
 	public function index(){
-		$data["member"] = $this->M_admin->getAll();
+		$data["member"] = $this->M_member->getAll();
 		$this->load->view("admin/member/list", $data);
 	}
 
 	public function add(){ 
-		$member = $this->M_admin;
+		$member = $this->M_member;
 		$validation = $this->form_validation;
 		$validation->set_rules($member->rules());
 
@@ -31,30 +31,30 @@ class Member extends CI_Controller
 		$this->load->view("admin/member/new_form");
 	}
 
-	public function edit($id=null)
+	public function edit($id_member=null)
 	{
-		if (!isset($id)) redirect('admin_list');
-		$admin = $this->M_admin;
+		if (!isset($id_member)) redirect('admin/member');
+		$member = $this->M_member;
 		$validation = $this->form_validation;
-		$validation->set_rules($admin->rules());
+		$validation->set_rules($member->rules());
 
 		if($validation->run()) {
-			$admin->update();
+			$member->update();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$data["admin"] = $admin->getById($id);
-		if (!$data["admin"]) show_404();
+		$data["member"] = $member->getById($id_member);
+		if (!$data["member"]) show_404();
 
-		$this->load->view("admin/kelola_admin/edit_form", $data);
+		$this->load->view("admin/member/edit_form", $data);
 	}
 
-	public function delete($id=null)
+	public function delete($id_member=null)
 	{
-		if (!isset($id)) show_404();
+		if (!isset($id_member)) show_404();
 		
-		if ($this->M_admin->delete($id)) {
-			redirect(site_url('admin_list'));
+		if ($this->M_member->delete($id_member)) {
+			redirect(site_url('admin/member'));
 		}
 	}
 }

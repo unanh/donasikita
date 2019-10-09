@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
 <meta charset="utf-8">
@@ -28,47 +29,29 @@
 <body id="body-login">
 
   <div class="container">
-
-
     <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
+      <div class="card-header">Reset Password</div>
       <div class="card-body">
-
-    <?php if ($this->session->flashdata('danger')): ?>
-    <div class="alert alert-danger" role="alert">
-    <?php echo $this->session->flashdata('danger'); ?>
-    </div>
-    <?php endif; ?>
-
-        <form method="post" action="<?php echo base_url('admin/login/aksi_login') ?>">
+        <div class="text-center mb-4">
+          <h4>Forgot your password?</h4>
+          <p>Enter your email address and we will send you instructions on how to reset your password.</p>
+        </div>
+        <form>
           <div class="form-group">
             <div class="form-label-group">
-              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username" required="required" autofocus="autofocus">
-              <label for="inputEmail">Email address</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Enter email address" required="required" autofocus="autofocus">
+              <label for="inputEmail">Enter email address</label>
             </div>
           </div>
-          <div class="form-group">
-            <div class="form-label-group">
-              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required="required">
-              <label for="inputPassword">Password</label>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="remember-me">
-                Remember Password
-              </label>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-block">Login</button>
+          <a class="btn btn-primary btn-block" href="login.html">Reset Password</a>
         </form>
         <div class="text-center">
-          <a class="d-block small mt-3" href="<?php echo base_url('admin/forgot-password') ?>">Forgot Password?</a>
+          <a class="d-block small mt-3" href="<?php echo base_url('admin/login') ?>">Login Page</a>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Bootstrap core JavaScript-->
   <script src="<?php echo base_url('assets/jquery/jquery.min.js') ?>"></script>
@@ -90,4 +73,5 @@
   <script src="<?php echo base_url('js/demo/chart-area-demo.js') ?>"></script>
 
 </body>
+
 </html>

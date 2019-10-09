@@ -24,9 +24,13 @@ class Login extends CI_Controller{
 		if($cek > 0){
  
 			$data_session = array(
+				'id' => $id,
 				'nama' => $data->nama,
 				'foto' => $data->foto,
-				'email' => $username,
+				'email' => $data->username,
+				'alamat' => $data->alamat,
+				'bio' => $data->bio,
+				'level' => $data->level,
 				'status' => "login"
 				);
  
@@ -35,8 +39,14 @@ class Login extends CI_Controller{
 			redirect(base_url("admin"));
  
 		}else{
-			echo "Username dan password salah !";
+			$this->session->set_flashdata('danger','Username dan password salah !');
+			$this->load->view("admin/login");
 		}
+	}
+
+	function forgotpassword()
+	{
+		$this->load->view('admin/forgot-password');
 	}
  
 	function logout(){

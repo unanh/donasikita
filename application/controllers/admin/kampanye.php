@@ -3,58 +3,58 @@
 /**
 * 
 */
-class Admin extends CI_Controller
+class Kampanye extends CI_Controller
 {
 	
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model("M_admin");
+		$this->load->model("M_kampanye");
 		$this->load->library('form_validation');
 	}
 
 	public function index(){
-		$data["admin"] = $this->M_admin->getAll();
-		$this->load->view("admin/kelola_admin/list", $data);
+		$data["kampanye"] = $this->M_kampanye->getAll();
+		$this->load->view("admin/kampanye/list", $data);
 	}
 
 	public function add(){ 
-		$admin = $this->M_admin;
+		$kampanye = $this->M_kampanye;
 		$validation = $this->form_validation;
-		$validation->set_rules($admin->rules());
+		$validation->set_rules($kampanye->rules());
 
 		if ($validation->run()) {
-			$admin->save();
+			$kampanye->save();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$this->load->view("admin/kelola_admin/new_form");
+		$this->load->view("admin/kampanye/new_form2");
 	}
 
-	public function edit($id=null)
+	public function edit($id_kampanye=null)
 	{
-		if (!isset($id)) redirect('admin_list');
-		$admin = $this->M_admin;
+		if (!isset($id_kampanye)) redirect('admin/kampanye');
+		$kampanye = $this->M_kampanye;
 		$validation = $this->form_validation;
-		$validation->set_rules($admin->rules());
+		$validation->set_rules($kampanye->rules());
 
 		if($validation->run()) {
-			$admin->update();
+			$kampanye->update();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$data["admin"] = $admin->getById($id);
-		if (!$data["admin"]) show_404();
+		$data["kampanye"] = $kampanye->getById($id_kampanye);
+		if (!$data["kampanye"]) show_404();
 
-		$this->load->view("admin/kelola_admin/edit_form", $data);
+		$this->load->view("admin/kampanye/edit_form", $data);
 	}
 
-	public function delete($id=null)
+	public function delete($id_kampanye=null)
 	{
-		if (!isset($id)) show_404();
+		if (!isset($id_kampanye)) show_404();
 		
-		if ($this->M_admin->delete($id)) {
-			redirect(site_url('admin_list'));
+		if ($this->M_kampanye->delete($id_kampanye)) {
+			redirect(site_url('admin/kampanye'));
 		}
 	}
 }

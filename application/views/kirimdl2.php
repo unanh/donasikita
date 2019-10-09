@@ -49,21 +49,17 @@
 							<td><input type="number" name="" placeholder="tampil DB"></td>
 						</tr>
 						<tr>
-							<td>Logo Bank</td>
+							<td>Rek. Tujuan</td>
 							<td>:</td>
-							<td><input type="text" placeholder="tampil DB?"></td>
+							<td><input type="text" name="" placeholder="data tampil pilhan DB bri/bni/bca"></td>
 						</tr>
-						<tr>
-							<td>Upload bukti transfer</td>
-							<td>:</td>
-							<td><button class="fluid ui toggle button">Upload</button></td>
-						</tr>
+					
 						<tr>
 							<td></td>
 							<td></td>
 							<td>
 								<a href="<?php echo base_url().'kirimdl3'?>"><button
-										class="ui orange bottom attached button">Lanjut</button></a>
+										class="ui orange bottom attached button">Tranfer dlu</button></a>
 							</td>
 						</tr>
 				</div>

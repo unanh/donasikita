@@ -3,7 +3,7 @@
 /**
 * 
 */
-class Admin extends CI_Controller
+class Donasi extends CI_Controller
 {
 	
 	public function __construct()
@@ -19,42 +19,42 @@ class Admin extends CI_Controller
 	}
 
 	public function add(){ 
-		$admin = $this->M_admin;
+		$donasi = $this->M_donasi;
 		$validation = $this->form_validation;
-		$validation->set_rules($admin->rules());
+		$validation->set_rules($donasi->rules());
 
 		if ($validation->run()) {
-			$admin->save();
+			$donasi->save();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$this->load->view("admin/kelola_admin/new_form");
+		$this->load->view("admin/donasi/new_form2");
 	}
 
-	public function edit($id=null)
+	public function edit($id_donasi=null)
 	{
-		if (!isset($id)) redirect('admin_list');
-		$admin = $this->M_admin;
+		if (!isset($id_donasi)) redirect('admin/donasi');
+		$donasi = $this->M_donasi;
 		$validation = $this->form_validation;
-		$validation->set_rules($admin->rules());
+		$validation->set_rules($donasi->rules());
 
 		if($validation->run()) {
-			$admin->update();
+			$donasi->update();
 			$this->session->set_flashdata('success','Berhasil disimpan');
 		}
 
-		$data["admin"] = $admin->getById($id);
-		if (!$data["admin"]) show_404();
+		$data["donasi"] = $donasi->getById($id_donasi);
+		if (!$data["donasi"]) show_404();
 
-		$this->load->view("admin/kelola_admin/edit_form", $data);
+		$this->load->view("admin/donasi/edit_form", $data);
 	}
 
-	public function delete($id=null)
+	public function delete($id_donasi=null)
 	{
-		if (!isset($id)) show_404();
+		if (!isset($id_donasi)) show_404();
 		
-		if ($this->M_admin->delete($id)) {
-			redirect(site_url('admin_list'));
+		if ($this->M_donasi->delete($id_donasi)) {
+			redirect(site_url('admin/donasi'));
 		}
 	}
 }

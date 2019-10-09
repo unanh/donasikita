@@ -4840,6 +4840,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-nav .nav-link {
+  font-size: medium;
   color: rgba(255, 255, 255, 0.5);
   border-left: rgba(33,37,41,0.5);
   border-left-width: 1px;
@@ -10697,6 +10698,7 @@ body {
 }
 
 .sidebar {
+  font-size: medium;
   width: 90px !important;
   background-color: #212529;
   min-height: calc(100vh - 56px);

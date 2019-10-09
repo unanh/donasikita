@@ -32,29 +32,26 @@
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach ($admin as $admin): ?>
+				<?php foreach ($member as $item): ?>
 				<tr>
 					<td>
-						<?php echo $admin->nama ?>
+						<?php echo $item->nama ?>
 					</td>
 					<td>
-						<?php echo $admin->username ?>
+						<?php echo $item->username ?>
 					</td>
 					<td>
-						<img src="<?php echo base_url('assets/img/'.$admin->foto) ?>" width="64">
+						<img src="<?php echo base_url('assets/img/'.$item->foto) ?>" width="64">
 					</td>
 					<td>
-						<?php echo $admin->alamat ?>
+						<?php echo $item->alamat ?>
 					</td>
 					<td class="small">
-						<?php echo substr($admin->bio, 0, 120) ?>...
-					</td>
-					<td>
-						<?php echo $admin->level ?>
+						<?php echo substr($item->bio, 0, 120) ?>...
 					</td>
 					<td width="250">
-						<a href="<?php echo site_url('admin_edit/'.$admin->id) ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
-						<a onclick="deleteConfirm('<?php echo site_url('admin_delete/'.$admin->id) ?>')" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
+						<a href="<?php echo site_url('admin/member/edit/'.$item->id_member) ?>" class="btn btn-small"><i class="fas fa-edit"></i>Edit</a>
+						<a onclick="deleteConfirm('<?php echo site_url('admin/member/delete/'.$item->id_member) ?>')" class="btn btn-small text-danger"><i class="fas fa-trash"></i>Hapus</a>
 					</td>
 				</tr>
 			<?php endforeach; ?>
