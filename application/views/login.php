@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
   <!-- Standard Meta -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -79,7 +82,7 @@
     })
   ;
   </script>
-</head><br>
+</head>
 <body>
 
 <div class="ui middle aligned center aligned grid">
@@ -87,7 +90,7 @@
     <h2 class="ui teal image header">
       <img src="./semantic/images/logo.png" class="image">
       <div class="content">
-        Registrasi akun
+        Log-in
       </div>
     </h2>
     <form class="ui large form">
@@ -95,19 +98,7 @@
         <div class="field">
           <div class="ui left icon input">
             <i class="user icon"></i>
-            <input type="text" name="username" placeholder="Username">
-          </div>
-        </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="mail icon"></i>
-            <input type="email" name="email" placeholder="E-mail">
-          </div>
-        </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="phone icon"></i>
-            <input type="text" name="no_hp" placeholder="Nomor hp">
+            <input type="text" name="email" placeholder="E-mail address">
           </div>
         </div>
         <div class="field">
@@ -118,19 +109,25 @@
         </div>
         <div class="field">
           <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Ulangi password">
+            <a href="" title="">Lupa Pasword?</a>
           </div>
         </div>
-        <a href="<?php echo base_url().'galangdana2' ?>" title="">
-          <div class="ui fluid large teal submit button"> Lanjutkan</div>
+        <a href="<?php echo base_url().'profil' ?>" title="">
+          <div class="ui fluid large teal submit button">Login</div>
         </a>
+        
       </div>
 
       <div class="ui error message"></div>
 
     </form>
+
+    <div class="ui message">
+      belum punya akun? <a href="<?php echo base_url().'register' ?>">Daftar</a>
+    </div>
   </div>
 </div>
 
 </body>
+
+</html>

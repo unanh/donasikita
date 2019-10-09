@@ -1,5 +1,5 @@
 <h3><center>
-MARI BERDONASI    
+PENDIDIKAN    
 </center>
 </h3>
 <div class="ui grid segment container">

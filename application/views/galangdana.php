@@ -87,39 +87,46 @@
     <h2 class="ui teal image header">
       <img src="./semantic/images/logo.png" class="image">
       <div class="content">
-        Registrasi akun
+        Formulir Galang Dana
       </div>
     </h2>
     <form class="ui large form">
       <div class="ui stacked segment">
         <div class="field">
           <div class="ui left icon input">
-            <i class="user icon"></i>
-            <input type="text" name="username" placeholder="Username">
+            <i class="tasks icon"></i>
+            <input type="text" name="kk" placeholder="Nomor Kartu Keluarga">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
-            <i class="mail icon"></i>
-            <input type="email" name="email" placeholder="E-mail">
+            <i class="address card icon"></i>
+            <input type="text" name="nik" placeholder="Nomor Induk Kependudukan (NIK)">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="nama" placeholder="Nama Lengkap">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="home icon"></i>
+            <input type="text" name="alamat" placeholder="Alamat">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
             <i class="phone icon"></i>
-            <input type="text" name="no_hp" placeholder="Nomor hp">
+            <input type="text" name="no_hp" placeholder="Nomor yang bisa dihubungi">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
-          </div>
-        </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Ulangi password">
+            <i class="pencil alternate icon"></i><!-- 
+            <input type="textarea" name="deskripsi" placeholder="Jelaskan maksud anda disini"> -->
+            <textarea name="deskripsi" placeholder="jelaskan maksud dan tujuan anda disini"></textarea>
           </div>
         </div>
         <a href="<?php echo base_url().'galangdana2' ?>" title="">

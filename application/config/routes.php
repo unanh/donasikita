@@ -86,8 +86,18 @@ $route['admin/kampanye/delete()/(:any)'] = 'admin/kampanye/delete/$1';
 $route['kirimdl'] = 'User/kirimdl/';
 $route['kirimdl2'] = 'User/kirimdl2/';
 $route['kirimdl3'] = 'User/kirimdl3/';
+$route['donasikes'] = 'User/donasikes/';
+$route['donasipend'] = 'User/donasipend/';
 $route['donasi'] = 'User/donasi/';
 $route['register'] = 'User/register/';
-$route['us_login'] = 'User/us_login/';
+$route['login'] = 'User/login/';
+$route['detail'] = 'User/detail/';
+$route['profil'] = 'User/profilpem/';
+$route['editprofil'] = 'User/editprofil/';
+$route['notifikasi'] = 'User/notif/';
+$route['galangdana'] = 'User/galangdana/';
+$route['galangdana2'] = 'User/galangdana2/';
+
+
 
 

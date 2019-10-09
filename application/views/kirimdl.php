@@ -47,7 +47,7 @@
 							<td><input type="number" name="" placeholder="Jumlah bantuan"></td>
 						</tr>
 						<tr>
-							<td>Rek. Tujuan</td>
+							<td>Metode pembayaran</td>
 							<td>:</td>
 							<td><input type="text" name="" placeholder="data tampil pilhan DB bri/bni/bca"></td>
 						</tr>

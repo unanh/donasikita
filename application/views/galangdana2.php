@@ -79,7 +79,7 @@
     })
   ;
   </script>
-</head><br>
+</head>
 <body>
 
 <div class="ui middle aligned center aligned grid">
@@ -87,43 +87,37 @@
     <h2 class="ui teal image header">
       <img src="./semantic/images/logo.png" class="image">
       <div class="content">
-        Registrasi akun
+        Formulir Galang Dana
       </div>
     </h2>
     <form class="ui large form">
       <div class="ui stacked segment">
         <div class="field">
           <div class="ui left icon input">
-            <i class="user icon"></i>
-            <input type="text" name="username" placeholder="Username">
+            <i class="calendar alternate outline icon"></i>
+            <input type="text" name="pencairan" placeholder="Tanggal kebutuhan">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
-            <i class="mail icon"></i>
-            <input type="email" name="email" placeholder="E-mail">
+            <i class="money icon"></i>
+            <input type="number" name="nominal" placeholder="Nominal kebutuhan">
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
-            <i class="phone icon"></i>
-            <input type="text" name="no_hp" placeholder="Nomor hp">
+            <i class="upload icon"></i>
+            <input type="file" name="doc" placeholder="upload dokumen">Dokumen Pendukung
           </div>
         </div>
         <div class="field">
           <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Password">
+            <i class="credit card icon"></i>
+            <input type="text" name="rekening" placeholder="Nomor rekening penerima">
           </div>
         </div>
-        <div class="field">
-          <div class="ui left icon input">
-            <i class="lock icon"></i>
-            <input type="password" name="password" placeholder="Ulangi password">
-          </div>
-        </div>
-        <a href="<?php echo base_url().'galangdana2' ?>" title="">
-          <div class="ui fluid large teal submit button"> Lanjutkan</div>
+        <a href="<?php echo base_url().'detail' ?>" title="">
+           <div class="ui fluid large teal submit button">Ajukan</div>
         </a>
       </div>
 

@@ -2,10 +2,10 @@
 </div>
 <div class="ui hidden divider"></div>
 <div class="ui hidden divider"></div>
-<div class="ui inverted blue vertical footer segment">
+<div class="ui inverted teal vertical footer segment">
         <div class="ui container">
           <div
-            class="ui stackable inverted divided equal height stackable grid"
+            class="ui stackable inverted  divided equal height stackable grid"
           >
             <div class="three wide column">
               <h4 class="ui inverted header">About</h4>

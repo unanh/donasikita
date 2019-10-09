@@ -13,10 +13,10 @@ public function index()
          
                 
 }
-public function donasi()
+public function donasikes()
 {
          $this->load->view('tampil/header');
-         $this->load->view('donasi');
+         $this->load->view('donasikes');
          $this->load->view('tampil/footer');
      
          
@@ -56,15 +56,63 @@ public function register()
          $this->load->view('regdonatur');
          $this->load->view('tampil/footer');               
 }
-public function us_login()
+public function login()
 {
          $this->load->view('tampil/header');
-         $this->load->view('us_login');
+         $this->load->view('login');
          $this->load->view('tampil/footer');               
+}    
+public function detail()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('detail');
+         $this->load->view('tampil/footer');
+         
 }
-        
+public function profilpem()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('profilpem');
+         $this->load->view('tampil/footer');
 }
-        
+public function donasipend()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('donasipend');
+         $this->load->view('tampil/footer');
+}
+public function donasi()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('donasi');
+         $this->load->view('tampil/footer');
+}
+public function editprofil()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('editprofil');
+         $this->load->view('tampil/footer');
+}
+public function notif()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('notif');
+         $this->load->view('tampil/footer');
+}
+public function galangdana()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('galangdana');
+         $this->load->view('tampil/footer');
+}
+public function galangdana2()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('galangdana2');
+         $this->load->view('tampil/footer');
+}
+}
+
     /* End of file  user.php */
         
                             
