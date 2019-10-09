@@ -23,6 +23,16 @@ public function donasikes()
                 
 }
 
+public function laporan1()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('laporan1');
+         $this->load->view('tampil/footer');
+     
+         
+                
+}
+
 public function kirimdl()
 {
          $this->load->view('tampil/header');

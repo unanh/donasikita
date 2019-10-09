@@ -108,6 +108,7 @@ $route['editprofil'] = 'User/editprofil/';
 $route['notifikasi'] = 'User/notif/';
 $route['galangdana'] = 'User/galangdana/';
 $route['galangdana2'] = 'User/galangdana2/';
+$route['laporan1'] = 'User/laporan1/';
 
 
 
