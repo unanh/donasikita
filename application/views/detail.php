@@ -51,30 +51,7 @@
         </td>
       </tr><tr>
         <td >LAPORAN PENGGUNAAN</td>
-        <td><a href="<?php echo base_url().'profil' ?>" title="">
-          <div class="ui mini unstackable steps">
-          <div class="active step">
-            <i class="info icon"></i>
-            <div class="content">
-              <div class="title">Tahap 1</div>
-              <div class="description">Verifikasi</div>
-            </div>
-          </div>
-          <div class="disabled step">
-            <i class="info icon"></i>
-            <div class="content">
-              <div class="title">Tahap 2</div>
-              <div class="description">Belum</div>
-            </div>
-          </div>
-          <div class="disabled step">
-            <i class="info icon"></i>
-            <div class="content">
-              <div class="title">Tahap 3</div>
-              <div class="description">belum</div>
-            </div>
-          </div>
-        </div>
+        <td><a href="<?php echo base_url().'laporan1-1' ?>" title=""><h4>Lihat selengkapnya</h4>
         </a></td>
       </tr>
     </tbody>

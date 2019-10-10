@@ -102,13 +102,103 @@ public function notif()
 public function galangdana()
 {
          $this->load->view('tampil/header');
-         $this->load->view('galangdana');
+         $this->load->view('galangdana/galangdana');
          $this->load->view('tampil/footer');
 }
 public function galangdana2()
 {
          $this->load->view('tampil/header');
-         $this->load->view('galangdana2');
+         $this->load->view('galangdana/galangdana2');
+         $this->load->view('tampil/footer');
+}
+public function retensi11()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi11');
+         $this->load->view('tampil/footer');
+}
+public function retensi12()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi12');
+         $this->load->view('tampil/footer');
+}
+public function retensi13()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi13');
+         $this->load->view('tampil/footer');
+}
+public function retensi14()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi14');
+         $this->load->view('tampil/footer');
+}
+public function retensi15()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi15');
+         $this->load->view('tampil/footer');
+}
+public function retensi21()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi21');
+         $this->load->view('tampil/footer');
+}
+public function retensi22()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi22');
+         $this->load->view('tampil/footer');
+}
+public function retensi23()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi23');
+         $this->load->view('tampil/footer');
+}
+public function retensi24()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi24');
+         $this->load->view('tampil/footer');
+}
+public function retensi25()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi25');
+         $this->load->view('tampil/footer');
+}
+public function retensi31()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi31');
+         $this->load->view('tampil/footer');
+}
+public function retensi32()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi32');
+         $this->load->view('tampil/footer');
+}
+public function retensi33()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi33');
+         $this->load->view('tampil/footer');
+}
+public function retensi34()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi34');
+         $this->load->view('tampil/footer');
+}
+public function retensi35()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('retensi/retensi35');
          $this->load->view('tampil/footer');
 }
 }

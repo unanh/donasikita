@@ -108,6 +108,21 @@ $route['editprofil'] = 'User/editprofil/';
 $route['notifikasi'] = 'User/notif/';
 $route['galangdana'] = 'User/galangdana/';
 $route['galangdana2'] = 'User/galangdana2/';
+$route['laporan1-1'] = 'User/retensi11/';
+$route['laporan1-2'] = 'User/retensi12/';
+$route['laporan1-3'] = 'User/retensi13/';
+$route['laporan1-4'] = 'User/retensi14/';
+$route['laporan1-5'] = 'User/retensi15/';
+$route['laporan2-1'] = 'User/retensi21/';
+$route['laporan2-2'] = 'User/retensi22/';
+$route['laporan2-3'] = 'User/retensi23/';
+$route['laporan2-4'] = 'User/retensi24/';
+$route['laporan2-5'] = 'User/retensi25/';
+$route['laporan3-1'] = 'User/retensi31/';
+$route['laporan3-2'] = 'User/retensi32/';
+$route['laporan3-3'] = 'User/retensi33/';
+$route['laporan3-4'] = 'User/retensi34/';
+$route['laporan3-5'] = 'User/retensi35/';
 
 
 
