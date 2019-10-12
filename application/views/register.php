@@ -122,8 +122,8 @@
             <input type="password" name="password" placeholder="Ulangi password">
           </div>
         </div>
-        <a href="<?php echo base_url().'galangdana2' ?>" title="">
-          <div class="ui fluid large teal submit button"> Lanjutkan</div>
+        <a href="<?php echo base_url().'login' ?>" title="">
+          <div class="ui fluid large teal submit button"> Registrasi</div>
         </a>
       </div>
 

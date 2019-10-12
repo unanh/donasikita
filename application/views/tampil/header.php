@@ -204,8 +204,8 @@
             <i class="dropdown icon"></i>
             <div class="menu">
                 <div class="header">Kategori</div>
-                <a href="<?php echo base_url().'donasipend'?>" title=""><div class="item">pendidikan</div></a>
-                <a href="<?php echo base_url().'donasikes'?>" title=""><div class="item">Kesehatan</div></a>
+                <a href="<?php echo base_url().'pendidikan'?>" title=""><div class="item">pendidikan</div></a>
+                <a href="<?php echo base_url().'kesehatan'?>" title=""><div class="item">Kesehatan</div></a>
             </div>
         </div>
         <a class="item" href="<?php echo base_url().'donasi'?>">Donasi</a>
@@ -234,8 +234,8 @@
                     <div class="menu">
                         <div class="header">Kategori</div>
 
-                        <a href="<?php echo base_url().'donasipend'?>" title=""><div class="item">pendidikan</div></a>
-                        <a href="<?php echo base_url().'donasikes'?>" title=""><div class="item">Kesehatan</div>
+                        <a href="<?php echo base_url().'pendidikan'?>" title=""><div class="item">pendidikan</div></a>
+                        <a href="<?php echo base_url().'kesehatan'?>" title=""><div class="item">Kesehatan</div>
                         </a>
                     </div>
                 </div>

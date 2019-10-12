@@ -13,10 +13,10 @@ public function index()
          
                 
 }
-public function donasikes()
+public function kesehatan()
 {
          $this->load->view('tampil/header');
-         $this->load->view('donasikes');
+         $this->load->view('kategori/pendidikan');
          $this->load->view('tampil/footer');
      
          
@@ -53,7 +53,7 @@ public function kirimdl3()
 public function register()
 {
          $this->load->view('tampil/header');
-         $this->load->view('regdonatur');
+         $this->load->view('register');
          $this->load->view('tampil/footer');               
 }
 public function login()
@@ -75,10 +75,10 @@ public function profilpem()
          $this->load->view('profilpem');
          $this->load->view('tampil/footer');
 }
-public function donasipend()
+public function pendidikan()
 {
          $this->load->view('tampil/header');
-         $this->load->view('donasipend');
+         $this->load->view('kategori/pendidikan');
          $this->load->view('tampil/footer');
 }
 public function donasi()
