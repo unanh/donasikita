@@ -165,8 +165,8 @@
           Jangan lupa istirahat dan makan
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Simpan</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Maap</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">telat upload</button>
         </div>
       </div>
     </div>
