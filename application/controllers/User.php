@@ -16,7 +16,7 @@ public function index()
 public function kesehatan()
 {
          $this->load->view('tampil/header');
-         $this->load->view('kategori/pendidikan');
+         $this->load->view('kategori/kesehatan');
          $this->load->view('tampil/footer');
      
          
@@ -203,6 +203,66 @@ public function retensi34()
 {
          $this->load->view('tampil/header');
          $this->load->view('retensi/retensi34');
+         $this->load->view('tampil/footer');
+}
+public function tentang()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('bantusaja/about');
+         $this->load->view('tampil/footer');
+}
+public function faq()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('bantusaja/faq');
+         $this->load->view('tampil/footer');
+}
+public function events()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('event/events');
+         $this->load->view('tampil/footer');
+}
+public function eventd()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('event/event_detail');
+         $this->load->view('tampil/footer');
+}
+public function profil()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('akun/profil');
+         $this->load->view('tampil/footer');
+}
+public function donasis()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('akun/donasi');
+         $this->load->view('tampil/footer');
+}
+public function laporan()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('akun/laporan');
+         $this->load->view('tampil/footer');
+}
+public function pesan()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('akun/notif');
+         $this->load->view('tampil/footer');
+}
+public function permohonan()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('akun/permohonan');
+         $this->load->view('tampil/footer');
+}
+public function contact()
+{
+         $this->load->view('tampil/header');
+         $this->load->view('bantusaja/contact');
          $this->load->view('tampil/footer');
 }
 public function retensi35()

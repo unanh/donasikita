@@ -1,267 +1,164 @@
 <!DOCTYPE html>
-<html>
-
-<!-- <div>
-
-<ul class=" slides">
-    <input type="radio" name="radio-btn" id="img-1" checked />
-    <li class="slide-container">
-        <div class="slide">
-            <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
-        </div>
-        <div class="nav">
-            <label for="img-6" class="prev">&#x2039;</label>
-            <label for="img-2" class="next">&#x203a;</label>
-        </div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-2" />
-    <li class="slide-container">
-        <div class="slide">
-            <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
-        </div>
-        <div class="nav">
-            <label for="img-1" class="prev">&#x2039;</label>
-            <label for="img-3" class="next">&#x203a;</label>
-        </div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-3" />
-    <li class="slide-container">
-        <div class="slide">
-            <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
-        </div>
-        <div class="nav">
-            <label for="img-2" class="prev">&#x2039;</label>
-            <label for="img-4" class="next">&#x203a;</label>
-        </div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-4" />
-    <li class="slide-container">
-        <div class="slide">
-            <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
-        </div>
-        <div class="nav">
-            <label for="img-3" class="prev">&#x2039;</label>
-            <label for="img-5" class="next">&#x203a;</label>
-        </div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-5" />
-    <li class="slide-container">
-        <div class="slide">
-            <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
-        </div>
-        <div class="nav">
-            <label for="img-4" class="prev">&#x2039;</label>
-            <label for="img-6" class="next">&#x203a;</label>
-        </div>
-    </li>
-
-    <input type="radio" name="radio-btn" id="img-6" />
-    <li class="slide-container">
-        <div class="slide">
-            <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
-        </div>
-        <div class="nav">
-            <label for="img-5" class="prev">&#x2039;</label>
-            <label for="img-1" class="next">&#x203a;</label>
-        </div>
-    </li>
-
-    <li class="nav-dots">
-        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-    </li>
-</ul> -->
-
-<head>
-    <title>donasi kita
-    </title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url().'semantic/style.css'?> ">
-    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="semantic/slider.css">
-
-    <script src="semantic/jquery.min.js" type="text/javascript"></script>
-    <script src="semantic/semantic.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.ui.dropdown').dropdown()
-            ;
-        });
-
-    </script>
+<html lang="en">
+  <head>
+    <!-- Bismillah niati ngibadah
+    ================================================== -->
+      <title>bantusaja.com</title>
+  <!-- ==============================================
+  Favicons
+  =============================================== -->
+  <link rel="shortcut icon" href="images/banner/favicon.ico">
+  <link rel="apple-touch-icon" href="images/banner/touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/banner/touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/banner/touch-icon-114x114.png">
+  
+  <!-- ==============================================
+  CSS VENDOR
+  =============================================== -->
+  <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+  
+  <!-- ==============================================
+  Custom Stylesheet
+  =============================================== -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
+    <script src="js/vendor/modernizr.min.js"></script>
 
 </head>
 
-<style type="text/css">
-    body {
-        -webkit-font-smoothing: antialiased;
-        -moz-font-smoothing: grayscale;
-    }
+<body>
 
-    .hidden.menu {
-        display: none;
-    }
+  <!-- LOAD PAGE -->
+  <div class="animationload">
+    <div class="loader"></div>
+  </div>
+  
+  <!-- BACK TO TOP SECTION -->
+  <a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
 
-
-    .masthead .logo.item img {
-        margin-right: 1em;
-    }
-
-    .masthead .ui.menu .ui.button {
-        margin-left: 0.5em;
-    }
-
-    .masthead h2 {
-        font-size: 1.7em;
-        font-weight: normal;
-    }
-
-
-
-    .ui.vertical.stripe h3 {
-        font-size: 2em;
-    }
-
-    .ui.vertical.stripe .button+h3,
-    .ui.vertical.stripe p+h3 {
-        margin-top: 3em;
-    }
-
-    .ui.vertical.stripe .floated.image {
-        clear: both;
-    }
-
-    .ui.vertical.stripe p {
-        font-size: 1.33em;
-    }
-
-    .ui.vertical.stripe .horizontal.divider {
-        margin: 3em 0em;
-    }
-
-    .quote.stripe.segment {
-        padding: 0em;
-    }
-
-    .quote.stripe.segment .grid .column {
-        padding-top: 5em;
-        padding-bottom: 5em;
-    }
-
-    .footer.segment {
-        padding: 5em 0em;
-    }
-
-    .secondary.pointing.menu .toc.item {
-        display: none;
-    }
-
-    @media only screen and (max-width: 700px) {
-        .ui.fixed.menu {
-            display: none !important;
-        }
-
-        .secondary.pointing.menu .item,
-        .secondary.pointing.menu .menu {
-            display: none;
-        }
-
-        .secondary.pointing.menu .toc.item {
-            display: block;
-        }
-
-        .masthead.segment {
-            min-height: 350px;
-        }
-
-        .masthead h1.ui.header {
-            font-size: 2em;
-            margin-top: 1.5em;
-        }
-
-        .masthead h2 {
-            margin-top: 0.5em;
-            font-size: 1.5em;
-        }
-    }
-</style>
-</head>
-
-<body id="root">
-    <div class="ui large top fixed hidden menu">
-        <div class="ui container ">
-
-         <a class="item" href="<?php echo base_url()?>" >Home </a>
-         <div class="ui  pointing dropdown link item">
-            <span class="text">Kategori</span>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-                <div class="header">Kategori</div>
-                <a href="<?php echo base_url().'pendidikan'?>" title=""><div class="item">pendidikan</div></a>
-                <a href="<?php echo base_url().'kesehatan'?>" title=""><div class="item">Kesehatan</div></a>
+  <!-- HEADER -->
+    <div class="header header-1">
+      <!-- TOPBAR -->
+      <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 col-md-6">
+            <p><em>Galang dana darurat bisa hubungi kami via telp atau email dibawah ini</em></p>
+          </div>
+          <div class="col-sm-5 col-md-6">
+            <div class="sosmed-icon pull-right">
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a> 
+              <a href="#"><i class="fa fa-instagram"></i></a> 
+              <a href="#"><i class="fa fa-youtube"></i></a> 
             </div>
+          </div>
         </div>
-        <a class="item" href="<?php echo base_url().'donasi'?>">Donasi</a>
-        <a class="item" href="<?php echo base_url().'galangdana'?>">Galang Dana</a>
+      </div>
+    </div>
+
+      <!-- MIDDLE BAR -->
+    <div class="middlebar">
+      <div class="container">
         
-        <div class="right menu">
-            <div class="item"><a class="ui button" href="<?php echo base_url().'login'?>">Log in</a></div>
-            <div class="item"><a class="ui button" href="<?php echo base_url().'register'?>">Sign Up</a>
+        
+        <div class="contact-info">
+          <!-- INFO 1 -->
+          <div class="box-icon-1">
+            <div class="icon">
+              <div class="fa fa-envelope-o"></div>
             </div>
-        </div> 
-    </div>
-</div>
-
-<!--Page Contents-->
-<div class="pusher">
-    <div class="ui inverted teal vertical masthead center aligned segment">
-        <div class="ui container">
-
-            <div class="ui large secondary menu">
-                <a class="item" href="<?php echo base_url()?>">
-                    Home
-                </a>
-                <div class="ui  pointing dropdown link item">
-                    <span class="text">Kategori</span>
-                    <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <div class="header">Kategori</div>
-
-                        <a href="<?php echo base_url().'pendidikan'?>" title=""><div class="item">pendidikan</div></a>
-                        <a href="<?php echo base_url().'kesehatan'?>" title=""><div class="item">Kesehatan</div>
-                        </a>
-                    </div>
-                </div>
-                <a class="item" href="<?php echo base_url().'donasi'?>">
-                    Donasi
-                </a>
-                <a class="item" href="<?php echo base_url().'galangdana'?>">
-                    Galang Dana
-                </a>
-
-                <div class="right item">
-                    <a class="ui inverted button" href="<?php echo base_url().'login'?>">Log in</a>
-                    <a class="ui inverted button" href="<?php echo base_url().'register'?>">Sign Up</a>
-
-                </div>
+            <div class="body-content">
+              <div class="heading">Mail :</div>
+              info@bantusaja.com
             </div>
-
-
-
+          </div>
+          <!-- INFO 2 -->
+          <div class="box-icon-1">
+            <div class="icon">
+              <div class="fa fa-phone"></div>
+            </div>
+            <div class="body-content">
+              <div class="heading">Call Us :</div>
+              +62 852-8512-6000
+            </div>
+          </div>
+          <!-- INFO 3 -->
+          <div class="box-act">
+            <a href="#" class="btn btn-lg btn-primary" id="galangheader">GALANG DANA</a>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
+    <!-- NAVBAR SECTION -->
+    <div class="navbar-main">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="<?php echo base_url()?>">
+            <img src="images/banner/logo.png" alt="" />
+          </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="<?php echo base_url()?>">HOME</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      DONASI
+                    </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="<?php echo base_url().'kesehatan'?>">Kesehatan</a>
+                            <a class="dropdown-item" href="<?php echo base_url().'pendidikan'?>">Pedidikan</a>
+                  </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ABOUT
+                    </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="<?php echo base_url().'about'?>">About Us</a>
+                        <a class="dropdown-item" href="<?php echo base_url().'faq'?>">FAQ</a>
+                  </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      EVENTS
+                    </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="<?php echo base_url().'events'?>">Events</a>
+                        <a class="dropdown-item" href="<?php echo base_url().'event_detail'?>">Events Detail</a>
+                  </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      AKUN
+                    </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="<?php echo base_url().'profil'?>">Profil</a>
+                        <a class="dropdown-item" href="<?php echo base_url().'notifikasi'?>">Kotak masuk</a>
+                        <a class="dropdown-item" href="<?php echo base_url().'laporan'?>">Laporan</a>
+                        <a class="dropdown-item" href="<?php echo base_url().'permohonan_saya'?>">Permohonan Saya</a>
+                        <a class="dropdown-item" href="<?php echo base_url().'donasi_saya'?>">Donasi Saya</a>
+                  </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="<?php echo base_url().'contact'?>">CONTACT US</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav> <!-- -->
 
+      </div>
+    </div>
 
-</div>
-</div>
-
-</body>
-</div>
-</html>
+    </div>

@@ -124,6 +124,16 @@ $route['laporan3-3'] = 'User/retensi33/';
 $route['laporan3-4'] = 'User/retensi34/';
 $route['laporan3-5'] = 'User/retensi35/';
 $route['laporan1'] = 'User/laporan1/';
+$route['about'] = 'User/tentang/';
+$route['faq'] = 'User/faq/';
+$route['events'] = 'User/events/';
+$route['event_detail'] = 'User/eventd/';
+$route['profil'] = 'User/profil/';
+$route['donasi_saya'] = 'User/donasis/';
+$route['laporan'] = 'User/laporan/';
+$route['notifikasi'] = 'User/pesan/';
+$route['permohonan_saya'] = 'User/permohonan/';
+$route['contact'] = 'User/contact/';
 
 
 
