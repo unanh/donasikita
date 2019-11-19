@@ -134,6 +134,7 @@ $route['laporan'] = 'User/laporan/';
 $route['notifikasi'] = 'User/pesan/';
 $route['permohonan_saya'] = 'User/permohonan/';
 $route['contact'] = 'User/contact/';
+$route['detail_campign'] = 'User/campign/';
 
 
 

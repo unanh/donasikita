@@ -34,14 +34,14 @@
 		                		<img src="images/gd/img-600x400.jpg" alt="">
 		              		</div>
 		              		<div class="body-content">
-		              			<p class="title"><a href="events-single.html">DONASI BUKU UNTUK YATIM</a></p>
+		              			<p class="title"><a href="<?php echo base_url().'event_detail'?>">DONASI BUKU UNTUK YATIM</a></p>
 		              			<div class="meta">
 									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
 									<span class="location"><i class="fa fa-map-marker"></i> Wonosobo, Jateng.</span>
 								</div>
 		              			<div class="text">Tim bantu saja akan mengadakan event donasi buku untuk yatim yang mana tim bantu saja akan membuka stand dan membuka siapa saja yang ingin membagikan buku nya untuk anak yatim yang selanjutnya akan kami serahkan kepada Rumah yatim.</div>
 		              			<div class="spacer-30"></div>
-		              			<a href="events-single.html" class="btn btn-primary">READ MORE</a>
+		              			<a href="<?php echo base_url().'event_detail'?>" class="btn btn-primary">READ MORE</a>
 		              		</div>
 			            </div>
 			        </div>
@@ -56,14 +56,14 @@
 		                		<img src="images/gd/img-600x400.jpg" alt="">
 		              		</div>
 		              		<div class="body-content">
-		              			<p class="title"><a href="events-single.html">DONASI BUKU UNTUK YATIM</a></p>
+		              			<p class="title"><a href="<?php echo base_url().'event_detail'?>">DONASI BUKU UNTUK YATIM</a></p>
 		              			<div class="meta">
 									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
 									<span class="location"><i class="fa fa-map-marker"></i> Wonosobo, Jateng.</span>
 								</div>
 		              			<div class="text">Tim bantu saja akan mengadakan event donasi buku untuk yatim yang mana tim bantu saja akan membuka stand dan membuka siapa saja yang ingin membagikan buku nya untuk anak yatim yang selanjutnya akan kami serahkan kepada Rumah yatim.</div>
 		              			<div class="spacer-30"></div>
-		              			<a href="events-single.html" class="btn btn-primary">READ MORE</a>
+		              			<a href="<?php echo base_url().'event_detail'?>" class="btn btn-primary">READ MORE</a>
 		              		</div>
 			            </div>
 			        </div>
@@ -78,14 +78,14 @@
 		                		<img src="images/gd/img-600x400.jpg" alt="">
 		              		</div>
 		              		<div class="body-content">
-		              			<p class="title"><a href="events-single.html">DONASI BUKU UNTUK YATIM</a></p>
+		              			<p class="title"><a href="<?php echo base_url().'event_detail'?>">DONASI BUKU UNTUK YATIM</a></p>
 		              			<div class="meta">
 									<span class="date"><i class="fa fa-clock-o"></i>  12:00 am - 5:00 pm</span>
 									<span class="location"><i class="fa fa-map-marker"></i> Wonosobo, Jateng.</span>
 								</div>
 		              			<div class="text">Tim bantu saja akan mengadakan event donasi buku untuk yatim yang mana tim bantu saja akan membuka stand dan membuka siapa saja yang ingin membagikan buku nya untuk anak yatim yang selanjutnya akan kami serahkan kepada Rumah yatim.</div>
 		              			<div class="spacer-30"></div>
-		              			<a href="events-single.html" class="btn btn-primary">READ MORE</a>
+		              			<a href="<?php echo base_url().'event_detail'?>" class="btn btn-primary">READ MORE</a>
 		              		</div>
 			            </div>
 			        </div>

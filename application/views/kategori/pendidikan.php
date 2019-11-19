@@ -8,7 +8,7 @@
       <div class="d-flex justify-content-center bd-highlight mb-3">
           <nav aria-label="breadcrumb">
           <ol class="breadcrumb ">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">pendidikan</li>
           </ol>
         </nav>
@@ -44,7 +44,7 @@
                                 <img src="images/gd/img-600x400.jpg" alt="">
                               </div>
                               <div class="body-content">
-                                <p class="title"><a href="cause-single.html">JUDUL GALANG DANA</a></p>
+                                <p class="title"><a href="<?php echo base_url().'detail_campign'?>">JUDUL GALANG DANA</a></p>
                                 <div class="text">Deskripsi tampil 200 karakter sisanya di detail.</div>
                                 <div class="progress-fundraising">
                                   <h7>10 hari lagi untuk Rp.12.000.000,-</h7><br>
@@ -65,7 +65,7 @@
                             <img src="images/gd/img-600x400.jpg" alt="">
                           </div>
                           <div class="body-content">
-                            <p class="title"><a href="cause-single.html">JUDUL GALANG DANA</a></p>
+                            <p class="title"><a href="<?php echo base_url().'detail_campign'?>">JUDUL GALANG DANA</a></p>
                             <div class="text">Deskripsi tampil 200 karakter sisanya di detail.</div>
                             <div class="progress-fundraising">
                               <h7>10 hari lagi untuk Rp.1.500.000,-</h7><br>
@@ -86,7 +86,7 @@
                               <img src="images/gd/img-600x400.jpg" alt="">
                             </div>
                             <div class="body-content">
-                              <p class="title"><a href="cause-single.html">JUDUL GALANG DANA</a></p>
+                              <p class="title"><a href="<?php echo base_url().'detail_campign'?>">JUDUL GALANG DANA</a></p>
                               <div class="text">Deskripsi tampil 200 karakter sisanya di detail.</div>
                               <div class="progress-fundraising">
                                 <h7>10 hari lagi untuk Rp.22.500.000,-</h7><br>
@@ -107,7 +107,7 @@
                                 <img src="images/gd/img-600x400.jpg" alt="">
                               </div>
                               <div class="body-content">
-                                <p class="title"><a href="cause-single.html">JUDUL GALANG DANA</a></p>
+                                <p class="title"><a href="<?php echo base_url().'detail_campign'?>">JUDUL GALANG DANA</a></p>
                                 <div class="text">Deskripsi tampil 200 karakter sisanya di detail.</div>
                                 <div class="progress-fundraising">
                                   <h7>10 hari lagi untuk Rp.12.000.000,-</h7><br>
@@ -128,7 +128,7 @@
                               <img src="images/gd/img-600x400.jpg" alt="">
                             </div>
                             <div class="body-content">
-                              <p class="title"><a href="cause-single.html">JUDUL GALANG DANA</a></p>
+                              <p class="title"><a href="<?php echo base_url().'detail_campign'?>">JUDUL GALANG DANA</a></p>
                               <div class="text">Deskripsi tampil 200 karakter sisanya di detail.</div>
                               <div class="progress-fundraising">
                                 <h7>10 hari lagi untuk Rp.22.500.000,-</h7><br>
@@ -149,7 +149,7 @@
                               <img src="images/gd/img-600x400.jpg" alt="">
                             </div>
                             <div class="body-content">
-                              <p class="title"><a href="cause-single.html">JUDUL GALANG DANA</a></p>
+                              <p class="title"><a href="<?php echo base_url().'detail_campign'?>">JUDUL GALANG DANA</a></p>
                               <div class="text">Deskripsi tampil 200 karakter sisanya di detail.</div>
                               <div class="progress-fundraising">
                                 <h7>10 hari lagi untuk Rp.22.500.000,-</h7><br>

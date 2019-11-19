@@ -265,10 +265,10 @@ public function contact()
          $this->load->view('bantusaja/contact');
          $this->load->view('tampil/footer');
 }
-public function retensi35()
+public function campign()
 {
          $this->load->view('tampil/header');
-         $this->load->view('retensi/retensi35');
+         $this->load->view('kategori/detail');
          $this->load->view('tampil/footer');
 }
 }
