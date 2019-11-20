@@ -17,53 +17,51 @@
 			
 		  	</div>
  	
-	<div class="container">
-		<h4><p>DAFTAR GALANG DANA</p></h4>
+<div class="container alert alert-success">
+ 		<center>
+		<h4><p>DAFTAR GALANG DANA</p></h4>	
+		</center>
  
-		<!-- Contoh pesan notifikasi alert menggunakan bootstrap 4 -->
- 
-		<form method="post" action="<?php echo base_url().'galangdana2'?>">
-		<div class="row">
-    	<div class="col">
-      		<input type="text" class="form-control" placeholder="First name">
-    	</div>
-    	<div class="col">
-      		<input type="text" class="form-control" placeholder="Last name">
-   		</div>
-  		</div>
-		<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-    		<option selected>Siapa yang anda bantu?</option>
-   			<option value="1">Saya sendiri</option>
-			<option value="2">Keluarga</option>
-    		<option value="3">Orang lain</option>
-  		</select>
-     	<div class="form-group">
-      		<label for="jk">Jenis Kelamin:</label>
-      	<select class="form-control" id="jk">
-        	<option>Pria</option>
-        	<option>Wanita</option>
-      	</select>
-    	</div>
-    	<div class="form-group">
-      		<label for="alamat">Penyakit yang diderita</label>
-      		<textarea type="text" class="form-control" id="alamat"></textarea>
-    	</div>
-    	<div class="custom-control custom-radio">
-  			<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-  			<label class="custom-control-label" for="customRadio1">Dirawat Rumah Sakit</label>
-		</div>
-		<div class="custom-control custom-radio">
-  			<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-  			<label class="custom-control-label" for="customRadio2">Rawat Jalan</label>
-		</div>
-		<div class="custom-control custom-radio">
-  			<input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-  			<label class="custom-control-label" for="customRadio3">Tidak Dirawat</label>
-		</div>
-    
-    <button type="submit" class="btn btn-primary" >Simpan</button>
+ 					<form action="<?php echo base_url().'galangdana3'?>" class="form-contact" id="contactForm" data-toggle="validator" novalidate="true">
+								<div class="alert alert-success row">
+									
+									<div class="col-sm-6 col-md-6">
 
-  </form>
+										<div class="form-group">
+											<input type="number" value="0" min="1000" step="1000" class="form-control">
+											biaya yang dibutuhkan
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="date" class="form-control" >
+											berapa lama galang dana berlangsung
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+																	
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control" id="p_phone" placeholder="Nomor hp/wa aktif">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="alert alert-success ">
+								<div class="form-group">
+									 <textarea class="form-control" rows="10" placeholder="keterangan akan digunakan untuk apa uang tersebut"></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								</div>
+								<div class="form-group"> 	
+									<div ></div>
+									<button type="submit" class="btn btn-primary">Simpan</button>
+								</div>
+							
+							</form>
+		
  
  
 	</div>

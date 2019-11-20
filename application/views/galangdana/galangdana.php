@@ -16,8 +16,11 @@
 			
 		  	</div>
  	
-	<div class="container">
-		<h4><p>DAFTAR GALANG DANA</p></h4>
+	<div class="container alert alert-success">
+		<center>
+		<h4><p>DAFTAR GALANG DANA</p></h4>	
+		</center>
+		
  
 		<!-- Contoh pesan notifikasi alert menggunakan bootstrap 4 -->
  
