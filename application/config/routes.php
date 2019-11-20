@@ -106,8 +106,10 @@ $route['detail'] = 'User/detail/';
 $route['profil'] = 'User/profilpem/';
 $route['editprofil'] = 'User/editprofil/';
 $route['notifikasi'] = 'User/notif/';
+
 $route['galangdana'] = 'User/galangdana/';
 $route['galangdana2'] = 'User/galangdana2/';
+
 $route['laporan1-1'] = 'User/retensi11/';
 $route['laporan1-2'] = 'User/retensi12/';
 $route['laporan1-3'] = 'User/retensi13/';

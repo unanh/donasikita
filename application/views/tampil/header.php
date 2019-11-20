@@ -90,7 +90,7 @@
           </div>
           <!-- INFO 3 -->
           <div class="box-act">
-            <a href="#" class="btn btn-lg btn-primary" id="galangheader">GALANG DANA</a>
+            <a href="<?php echo base_url().'galangdana'?>" class="btn btn-lg btn-primary" >GALANG DANA</a>
           </div>
           
         </div>
@@ -144,7 +144,7 @@
                       AKUN
                     </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="<?php echo base_url().'profil'?>">Profil</a>
+                        <a class="dropdown-item"  id="loginheader">Profil</a>
                         <a class="dropdown-item" href="<?php echo base_url().'notifikasi'?>">Kotak masuk</a>
                         <a class="dropdown-item" href="<?php echo base_url().'laporan'?>">Laporan</a>
                         <a class="dropdown-item" href="<?php echo base_url().'permohonan_saya'?>">Permohonan Saya</a>

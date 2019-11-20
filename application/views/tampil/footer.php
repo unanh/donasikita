@@ -145,7 +145,7 @@
     <!-- modal Galang dana  -->
   <script>
     $(document).ready(function(){
-      $("#galangheader").click(function(){
+      $("#loginheader").click(function(){
         $("#myModalheader").modal();
       });
     });
@@ -162,11 +162,40 @@
           <h4 class="modal-title">NIATI NGIBADAH YA...HAHA</h4>
         </div>
         <div class="modal-body">
-          Jangan lupa istirahat dan makan
+
+          <form method="post" action="<?php echo base_url().'profil'?>">
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="username"  autofocus="autofocus">
+              <label for="inputEmail">Email address</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" 
+              <label for="inputPassword">Password</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me">
+                Remember Password
+              </label>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block">Login</button>
+        </form>
+        <div class="text-center">
+          <a class="d-block small mt-3" href="#">Forgot Password?</a>
+        </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Maap</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">telat upload</button>
+
+          
+           <a href="#" class="btn btn-lg btn-primary" >Register</a>
+        
+         
         </div>
       </div>
     </div>

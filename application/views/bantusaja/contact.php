@@ -74,7 +74,7 @@
 						<div class="content">
 							<form action="#" class="form-contact" id="contactForm" data-toggle="validator" novalidate="true">
 								<div class="row">
-									<div class="col-sm-6 col-md-6">
+									<div class=" ">
 										<div class="form-group">
 											<input type="text" class="form-control" id="p_name" placeholder="Nama Anda" required="">
 											<div class="help-block with-errors"></div>
